@@ -1,0 +1,45 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.222:3306/fantasticmonkey
+    username: root
+    password: root
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
+
+open_dota:
+  token: f2f069e7-ffbd-4920-a91d-ea03778c4b70
+  url: https://api.opendota.com/api
+
+wechat_work:
+  corpid: ww664b7f560125a130
+  corpsecret: rqO_GZfH4LQA5zT5C9TtDxCdstOE2FHNwJBU98Q-EXI
+  alarm:
+    agentid: 1000002
+ezviz:
+  appKey: a513af2d032844b99289a0d6a970e156
+  appSecret: 36c42ea614b1737166def27393685166
+  # 收到告警后抓拍次数
+  times: 1
+  # 告警图片下载
+  alarm_img_path: /alarm
+  include:
+    - G69552993
+server:
+  port: 8888
+
+AliCloud:
+  region_id: cn-hangzhou
+  access_key_id: LTAI5t9irTMFQ4jTfREhMgwS
+  access_key_secret: iKV7NWgnO7TIZhNNu7ldY1Auq6evTx
+  ddns:
+    domain_name: fantasticmonkey.cn
+    keyword: '@,www'
+
+kanban:
+  img_base_path: /kanban
